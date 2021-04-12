@@ -15,7 +15,7 @@ shinyUI(fluidPage(
   )
   ,mainPanel(
   plotOutput("boxplot"),
-  h3('Complmented DNA'),
+  h3('Complemented DNA'),
   textOutput(outputId = 'complement',)
   )
   )))
