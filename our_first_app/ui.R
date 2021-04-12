@@ -2,7 +2,8 @@ library(shiny)
 library(shinythemes)
 
 
-ui <- fluidPage(
+shinyUI(fluidPage(
+  titlePanel("Gravier Data"), #Application title
   theme = shinytheme("cerulean"),
   sidebarLayout(
   sidebarPanel(
@@ -17,6 +18,5 @@ ui <- fluidPage(
   h3('Complmented DNA'),
   textOutput(outputId = 'complement',)
   )
-  )
-)
+  )))
 
