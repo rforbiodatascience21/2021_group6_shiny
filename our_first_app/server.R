@@ -1,6 +1,6 @@
 library(shiny)
 library(tidyverse)
-
+source("../R/99_functions.R")
 server <- function(input, output) {
   output$boxplot <- renderPlot({
     ggplot(data = cancer_data,
@@ -11,5 +11,6 @@ server <- function(input, output) {
       labs(y="Gene g2E09 Expression", x = " age group",fill = "Event Label")+
       coord_flip()
   })
+  output$complement <- renderText(complement(input$dna))
 }
 
