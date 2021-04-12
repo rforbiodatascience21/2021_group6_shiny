@@ -1,5 +1,5 @@
-install.packages("tidyverse")
-install.packages("remotes")
+
+library(shiny)
 remotes::install_github("ramhiser/datamicroarray")
 library("tidyverse")
 library("datamicroarray")
