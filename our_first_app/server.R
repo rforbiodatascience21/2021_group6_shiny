@@ -9,7 +9,8 @@ shinyServer(function(input, output) {
                          y = !!sym(input$gene),
                          fill=event_label))+
       geom_boxplot(alpha = 0.5)+
-      labs(y="Gene g2E09 Expression", x = " age group",fill = "Event Label")+
+      labs(y=paste("Expression of Gene", input$gene, sep = " ", collapse = NULL), 
+           x = " age group",fill = "Event Label")+
       coord_flip()
     
   })
