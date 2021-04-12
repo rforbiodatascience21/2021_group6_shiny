@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
 
-source("../R/99_functions.R")
+source("R/99_functions.R")
 server <- function(input, output) {
   output$boxplot <- renderPlot({
     
